@@ -91,5 +91,8 @@ extension MusicListVC{
         return cell
     }
 
-
+    override func tableView(tableView: UITableView, willDisplayCell cell: UITableViewCell, forRowAtIndexPath indexPath: NSIndexPath) {
+        let tableViewcLL = cell as! MusicListCell
+        tableViewcLL.beginAnimation(AnimationType.Rotation)
+    }
 }
