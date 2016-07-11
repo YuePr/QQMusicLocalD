@@ -56,6 +56,9 @@ extension MusicListVC{
         
         let backImageView = UIImageView(image: UIImage(named:"QQListBack.jpg"))
         tableView.backgroundView = backImageView
+        tableView.backgroundView?.backgroundColor = UIColor.grayColor()
+        
+        
         
         tableView.rowHeight = 60
         tableView.separatorStyle = .None
